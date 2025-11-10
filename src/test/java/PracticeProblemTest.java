@@ -95,7 +95,7 @@ public class PracticeProblemTest {
             Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
             String[] result = (String[])method.invoke(null, 5);
             assertArrayEquals(new String[]{"LR", "LM", "RM", "LR", "ML", "MR", "LR", 
-                                          "LM", "RM", "RL", "ML", "RM", "LR", "LM", "RM"
+                                          "LM", "RM", "RL", "ML", "RM", "LR", "LM", "RM",
                                           "LR", "ML", "MR", "LR", "ML", "RM", "RL", "ML",
                                           "MR", "LR", "LM", "RM", "LR", "ML", "MR", "LR"}, result);
             
